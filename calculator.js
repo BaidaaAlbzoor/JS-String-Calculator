@@ -1,11 +1,21 @@
 
 function add(stringNumbers) {
 
-    if (isNaN(stringNumbers)) {
-        return 0;
-    }
+    let sum = 0;
+    let numbers = stringNumbers.split(',');
 
-    return parseInt(stringNumbers);
+    numbers.forEach(item => {
+        let number = parseInt(item);
+
+        if (isNaN(number)) {
+            number = 0;
+        }
+
+        sum += number;
+    });
+
+
+    return sum;
 
 }
 
