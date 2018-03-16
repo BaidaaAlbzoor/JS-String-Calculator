@@ -7,7 +7,7 @@ function add(stringNumbers) {
     numbers.forEach(item => {
         let number = parseInt(item);
 
-        if (isNaN(number)) {
+        if (isNaN(number) || number > 1000) {
             number = 0;
         }
 
