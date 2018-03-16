@@ -11,6 +11,12 @@ function add(stringNumbers) {
             number = 0;
         }
 
+
+        if (number < 0) {
+            throw 'negative numbers not allowed';
+        }
+
+
         sum += number;
     });
 
