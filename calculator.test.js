@@ -19,3 +19,8 @@ test('return 0 if input is ""', () => {
   test('handle unknown amount of numbers', () => {
     expect(add("1,2,3")).toBe(6);
   });
+
+
+  test('handle new lines between numbers (instead of commas)', () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
