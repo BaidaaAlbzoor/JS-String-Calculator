@@ -36,3 +36,8 @@ test('throw an exception if input is a negative number', () => {
 test('return 2 if input is "2,1001"', function () {
     expect(add("2,1001")).toBe(2);
 });
+
+
+test('returns 6 when given "//;\n1;2"', function () {
+    expect(add("//;\n1;2")).toBe(3);
+});
