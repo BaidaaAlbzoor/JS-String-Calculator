@@ -2,7 +2,7 @@
 function add(stringNumbers) {
 
     let sum = 0;
-    let numbers = stringNumbers.split(',');
+    let numbers = stringNumbers.split(/[,\n]/);
 
     numbers.forEach(item => {
         let number = parseInt(item);
