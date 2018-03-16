@@ -15,3 +15,7 @@ test('return 0 if input is ""', () => {
     expect(add("1,2")).toBe(3);
   });
    
+
+  test('handle unknown amount of numbers', () => {
+    expect(add("1,2,3")).toBe(6);
+  });
